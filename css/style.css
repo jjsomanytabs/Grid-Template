@@ -1,0 +1,89 @@
+/* -------------------------- */
+/* Import 1. Material color schemes and utilize prefers-color-scheme. 2. Custom CSS Reset */
+
+@import url(theme.css);
+@import url(reset-jj.css);
+
+/* -------------------------------- */
+/* Global */
+
+
+/* -------------------------------- */
+/* Composition */
+
+.page-wrapper {
+  max-width: 980px;
+  margin-inline: auto;
+  padding: 0 calc(5%);
+  min-width: 240px;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.top-nav {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  padding: 1.5rem 0 2rem 0;
+}
+
+.top-nav-left {
+  grid-column: 1/2;
+}
+
+.top-nav-right {
+  grid-column: 3/4;
+}
+
+.divider-container {
+  padding-top: 1.5rem;
+  grid-column: 1/4;
+}
+
+main {
+  margin-block-end: 2em;
+}
+
+.text-wrapper {
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.first-p {
+  margin-block-start: 0;
+}
+
+.footer {
+  max-width: 600px;
+  margin-inline: auto;
+  width: 100%;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  background: var(--md-sys-color-on-background);
+}
+
+.sub-footer {
+  padding: 1.5rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3em;
+}
+
+.foot-left {
+  justify-self: end;
+}
+
+@media (min-width: 640px) {
+  .sub-footer {
+    padding: 1rem 0;
+  }
+}
+
+
+/* -------------------------- */
+/* Utility */
+
+/* tbd */
